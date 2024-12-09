@@ -1,64 +1,63 @@
+/* Base styles (unchanged) */
 * {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  font-family: SF PRO DISPLAY;
-}
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
-
-}
-/* style.css */
-body, h1, h3, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-#main{
+  }
+  
+  #main {
     position: relative;
     overflow: hidden;
-}
-#page{
+  }
+  
+  #page {
     position: relative;
     height: 100vh;
     width: 100vw;
     background-color: #000;
-
-}
-#page>nav{
+  }
+  
+  #page > nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0 20px;
     height: 7vh;
     width: 50vw;
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-}
-#page>nav>button{
+  }
+  
+  #page > nav > button {
     padding: 7px 20px;
     border-radius: 50px;
     border: none;
     background-color: #fff;
-}
-#page>nav>h3{
+  }
+  
+  #page > nav > h3 {
     font-weight: 400;
-}
-#page>video{
+  }
+  
+  #page > video {
     height: 100%;
     width: 50%;
     object-fit: cover;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
-#page-bottom{
+  }
+  
+  #page-bottom {
     height: 20%;
     width: 25%;
     position: absolute;
@@ -69,11 +68,62 @@ body, h1, h3, p, button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-#page-bottom>h3{
+  }
+  
+  #page-bottom > h3 {
     color: #dadada93;
     margin-bottom: 1vw;
-}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    #page > nav {
+      width: 60vw; /* Slightly increase width for medium screens */
+    }
+  
+    #page-bottom {
+      width: 30%; /* Adjust to maintain proportional appearance */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #page > nav {
+      width: 80vw; /* Increase nav width for better readability */
+    }
+  
+    #page > video {
+      width: 100%; /* Scale video width for smaller screens */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    #page-bottom {
+      width: 50%; /* Make bottom content fit smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #page > nav {
+     /* Stack nav items vertically */
+      height: auto;
+      padding: 10px;
+      width: 90%; /* Narrower width for small screens */
+    }
+    #page-bottom  > h3 {
+        color: black
+    }
+  
+    #page-bottom {
+      width: 70%; /* Further adjust width */
+    }
+  
+    #page > nav > button {
+      font-size: 0.9rem; /* Scale button text */
+      padding: 5px 15px;
+    }
+  }
+  
+
 #page1{
     position: relative;
     height: 100vh;
