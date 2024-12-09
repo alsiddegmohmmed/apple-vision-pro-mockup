@@ -207,7 +207,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 80px;
+    padding: 0px 54px;
     color: #ff823d;
 }
 #page3-upper-inner>h3{
@@ -464,14 +464,14 @@
     height: 90%;
     width: 45%;
     position: relative;
-    background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_top__k3b8lzqd1l2m_large.jpg);
+    background-image: url(https://www.apple.com/v/apple-vision-pro/e/images/overview/design/glass_top__k3b8lzqd1l2m_medium_2x.jpg);
     background-size: cover;
 }
 .right14{
     height: 90%;
     width: 45%;
     position: relative;
-    background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_side__gm4agomrwl2e_large.jpg);
+    background-image: url(https://www.apple.com/v/apple-vision-pro/e/images/overview/design/glass_side__gm4agomrwl2e_medium_2x.jpg);
     background-size: cover;
 }
 #page15{
